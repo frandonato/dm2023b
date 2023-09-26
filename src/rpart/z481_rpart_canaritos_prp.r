@@ -16,7 +16,7 @@ dir.create("./exp/EA4810/", showWarnings = FALSE)
 setwd("./exp/EA4810")
 
 # uso esta semilla para los canaritos
-set.seed(102191)
+set.seed(100019)
 
 # agrego 30 variables canarito,
 #  random distribucion uniforme en el intervalo [0,1]
@@ -29,10 +29,10 @@ modelo <- rpart(
     data = dataset[foto_mes == 202107, ],
     model = TRUE,
     xval = 0,
-    cp = -0.82,
-    minsplit = 769,
-    minbucket = 8,
-    maxdepth = 6
+    cp = -0.560603327111914,
+    minsplit = 1749,
+    minbucket = 3,
+    maxdepth = 7
 )
 
 
